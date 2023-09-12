@@ -10,5 +10,5 @@ then load trained weights with test data.
 ![Ekran görüntüsü 2023-09-11 124537](https://github.com/ishakpacal/Maize_leaf_disease_MaxViT/assets/58702074/31817a2e-045c-4b04-a48a-19c1fe54bf77)
 
 
-Novel Improved MaxViT-based model for identificaiton 0f maize leaf
-will be updated soon (after accpetance)
+Novel Improved MaxViT-based model for identificaiton of maize leaf.
+Will be updated soon (after accpetance)
