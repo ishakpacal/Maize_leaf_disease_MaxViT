@@ -1,4 +1,16 @@
-""" MaxVit and CoAtNet Vision Transformer - CNN Hybrids in PyTorch
+
+
+""" 
+Codes are barrowed from timm lab and repo.
+Edition is made on pure maxvit_tiny_tf_224
+GRN-based MLP and SE module is imported in here.
+Before all this, please go to "https://github.com/huggingface/pytorch-image-models", 
+train pure model then change maxxvit.py with this one.
+then load trained weights with test data.
+
+
+
+MaxVit and CoAtNet Vision Transformer - CNN Hybrids in PyTorch
 
 This is a from-scratch implementation of both CoAtNet and MaxVit in PyTorch.
 
@@ -1759,7 +1771,16 @@ model_cfgs = dict(
     # Trying to be like the MaxViT paper configs
     maxvit_tiny_tf=MaxxVitCfg(
         embed_dim=(64, 128, 256, 512),
-        depths=(1, 2, 4, 1), #sclaed maxvit
+        depths=(1, 2, 4, 1), #sclaed maxvit: for using maxvit tiny pre-trained weights.
+        block_type=('M',) * 4,
+        stem_width=64,
+        stem_bias=True,
+        head_hidden_size=512,
+        **_tf_cfg(),
+
+    maxvit_tiny_tf=MaxxVitCfg(
+        embed_dim=(64, 128, 256, 512),
+        depths=(2, 2, 5, 2), 
         block_type=('M',) * 4,
         stem_width=64,
         stem_bias=True,
