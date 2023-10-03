@@ -11,4 +11,4 @@ then load trained weights with test data.
 
 
 Novel Improved MaxViT-based model for identificaiton of maize leaf.
-Will be updated soon (after accpetance)
+Will be updated will whole codes soon (after accpetance)
